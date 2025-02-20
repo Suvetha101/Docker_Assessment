@@ -1,0 +1,22 @@
+* to build image
+  docker build -t nginx-static-html-image:v1 .
+
+* to check if image is created by listing images
+   docker images
+
+* to cretae container that run on 45678 port
+  docker run -d -p 45678:80 nginx-static-html-image:v1
+
+* to check for container creation
+    docker ps -a
+
+* to check for the content that will be on container running port. i.e., 45678
+    curl localhost:45678
+
+    then went to http://localhost:45678
+
+azure url
+
+  https://delightful-wave-0d2426d10.4.azurestaticapps.net
+
+https://portal.azure.com/#@jmangroup.com/resource/subscriptions/50daca33-5166-469d-a399-6ed65fc10c08/resourcegroups/Web_Apps/providers/Microsoft.Web/staticSites/AppWithNgnix/staticsite
